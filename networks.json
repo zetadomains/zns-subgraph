@@ -28,27 +28,27 @@
   "mainnet": {
     "ZetaRegistrarController": {
       "address": "0x604bdEE35ebC13ef233f6b4e20613061fDf5C7E5",
-      "startBlock": 1650000
+      "startBlock": 1657807
     }, 
     "BaseRegistrarImplementation": {
       "address": "0x6442eC5c3CCDaF112d6B78F9189cD111d516fE1E",
-      "startBlock": 1650000
+      "startBlock": 1657807
     },
     "ENSRegistryWithFallback": {
       "address": "0x64E5452cDd181AD99E69406f4b08393fa4bdDb66",
-      "startBlock": 1650000
+      "startBlock": 1657807
     },
     "ENSRegistryWithFallbackOld": {
       "address": "0xA7cb6aC74329d0516C0BfC8f4801a8744a1D023F",
-      "startBlock": 1650000
+      "startBlock": 1657807
     },
     "ReverseRegistrar": {
       "address": "0xa8c54A82f2308FBEA5E602468f8f6Bd83FC29278",
-      "startBlock": 1650000
+      "startBlock": 1657807
     },
     "PublicResolver": {
       "address": "0x16C3C323F0F88FaE55Dad218327d7230504fFBA6",
-      "startBlock": 1650000
+      "startBlock": 1657807
     }
   }
 }
