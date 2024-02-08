@@ -27,28 +27,28 @@
   },
   "mainnet": {
     "ZetaRegistrarController": {
-      "address": "0x6b42219F6faCeEa1787Fdd5DBd63B9D10DcE2DEC",
-      "startBlock": 1600000
+      "address": "0x604bdEE35ebC13ef233f6b4e20613061fDf5C7E5",
+      "startBlock": 1650000
     }, 
     "BaseRegistrarImplementation": {
-      "address": "0xCEeCD6AF7c1504410c527EdEf163920e9F18BEbF",
-      "startBlock": 1600000
+      "address": "0x6442eC5c3CCDaF112d6B78F9189cD111d516fE1E",
+      "startBlock": 1650000
     },
     "ENSRegistryWithFallback": {
-      "address": "0x73C5857a7710A7EF3bc32EfA32C8a2ba2827A211",
-      "startBlock": 1600000
+      "address": "0x64E5452cDd181AD99E69406f4b08393fa4bdDb66",
+      "startBlock": 1650000
     },
     "ENSRegistryWithFallbackOld": {
-      "address": "0x01BeCD733ea490CCDa8B5Caa97381E67BFA5249D",
-      "startBlock": 1600000
+      "address": "0xA7cb6aC74329d0516C0BfC8f4801a8744a1D023F",
+      "startBlock": 1650000
     },
     "ReverseRegistrar": {
-      "address": "0xb77e71BcCAd878820Ed2B122e2fE807840b6e87E",
-      "startBlock": 1600000
+      "address": "0xa8c54A82f2308FBEA5E602468f8f6Bd83FC29278",
+      "startBlock": 1650000
     },
     "PublicResolver": {
-      "address": "0x25Ec50Ce68d711007C19814cDc6915b980165bfc",
-      "startBlock": 1600000
+      "address": "0x16C3C323F0F88FaE55Dad218327d7230504fFBA6",
+      "startBlock": 1650000
     }
   }
 }

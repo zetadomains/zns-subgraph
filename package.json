@@ -17,6 +17,8 @@
     "deploy:local": "graph deploy zetadomains/zeta-subgraph-goerli --ipfs http://ipfs.local.com --node http://graph.local.com --network goerli",
     "remove:local": "graph remove zetadomains/zeta-subgraph-goerli --node http://graph.local.com --network goerli",
 
+    "codegen:remote": "graph codegen --network mainnet",
+    "build:remote": "graph build --network mainnet",
     "create:remote": "graph create zetadomains/zeta-subgraph --node https://graph.zeta.domains --network mainnet",
     "deploy:remote": "graph deploy zetadomains/zeta-subgraph --ipfs https://ipfs.zeta.domains --node https://graph.zeta.domains --network mainnet",
     "remove:remote": "graph remove zetadomains/zeta-subgraph --node https://graph.zeta.domains --network mainnet"

@@ -6,11 +6,11 @@ features:
 dataSources:
   - kind: ethereum
     name: ZetaRegistrarController
-    network: goerli
+    network: mainnet
     source:
       abi: ZetaRegistrarController
-      address: "0x7DD5267E087ff49faf9cdd6FB36489e8a8FAA52f"
-      startBlock: 10500000
+      address: "0x604bdEE35ebC13ef233f6b4e20613061fDf5C7E5"
+      startBlock: 1650000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -28,11 +28,11 @@ dataSources:
           handler: handleNameRenewedByController
   - kind: ethereum
     name: BaseRegistrarImplementation
-    network: goerli
+    network: mainnet
     source:
       abi: BaseRegistrarImplementation
-      address: "0x0705E714cd73aCA40d9A17E6c4dB566dbC83A6D0"
-      startBlock: 10500000
+      address: "0x6442eC5c3CCDaF112d6B78F9189cD111d516fE1E"
+      startBlock: 1650000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -52,11 +52,11 @@ dataSources:
           handler: handleNameTransferredByRegistrar
   - kind: ethereum
     name: ENSRegistryWithFallback
-    network: goerli
+    network: mainnet
     source:
       abi: ENSRegistryWithFallback
-      address: "0x01BeCD733ea490CCDa8B5Caa97381E67BFA5249D"
-      startBlock: 10500000
+      address: "0x64E5452cDd181AD99E69406f4b08393fa4bdDb66"
+      startBlock: 1650000
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
