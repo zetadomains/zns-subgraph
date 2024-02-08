@@ -1,2 +1,2 @@
 # zns-subgraph
-Subgraph
+Zeta Domains Subgraph

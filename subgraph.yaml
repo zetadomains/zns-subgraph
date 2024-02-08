@@ -1,0 +1,75 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+features:
+  - fullTextSearch
+dataSources:
+  - kind: ethereum
+    name: ZetaRegistrarController
+    network: goerli
+    source:
+      abi: ZetaRegistrarController
+      address: "0x7DD5267E087ff49faf9cdd6FB36489e8a8FAA52f"
+      startBlock: 10500000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      file: ./src/zetaRegistrar.ts
+      entities:
+        - Domain
+      abis:
+        - name: ZetaRegistrarController
+          file: ./abis/ZetaRegistrarController.json
+      eventHandlers:
+        - event: NameRegistered(string,indexed bytes32,indexed
+            address,uint256,uint256,uint256)
+          handler: handleNameRegisteredByController
+        - event: NameRenewed(string,indexed bytes32,uint256,uint256)
+          handler: handleNameRenewedByController
+  - kind: ethereum
+    name: BaseRegistrarImplementation
+    network: goerli
+    source:
+      abi: BaseRegistrarImplementation
+      address: "0x0705E714cd73aCA40d9A17E6c4dB566dbC83A6D0"
+      startBlock: 10500000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      file: ./src/zetaRegistrar.ts
+      entities:
+        - Domain
+      abis:
+        - name: BaseRegistrarImplementation
+          file: ./abis/BaseRegistrarImplementation.json
+      eventHandlers:
+        - event: NameRegistered(indexed uint256,indexed address,uint256)
+          handler: handleNameRegisteredByRegistrar
+        - event: NameRenewed(indexed uint256,uint256)
+          handler: handleNameRenewedByRegistrar
+        - event: Transfer(indexed address,indexed address,indexed uint256)
+          handler: handleNameTransferredByRegistrar
+  - kind: ethereum
+    name: ENSRegistryWithFallback
+    network: goerli
+    source:
+      abi: ENSRegistryWithFallback
+      address: "0x01BeCD733ea490CCDa8B5Caa97381E67BFA5249D"
+      startBlock: 10500000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      file: ./src/zetaRegistrar.ts
+      entities:
+        - Domain
+      abis:
+        - name: ENSRegistryWithFallback
+          file: ./abis/ENSRegistryWithFallback.json
+      eventHandlers:
+        - event: Transfer(indexed bytes32,address)
+          handler: handleTransferByRegistry
+        - event: NewOwner(indexed bytes32,indexed bytes32,address)
+          handler: handleNewOwnerByRegistry

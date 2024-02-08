@@ -1,0 +1,35 @@
+{
+  "name": "ens-subgraph",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    
+    "auth": "graph auth --product hosted-service $GRAPH_AUTH_HOSTED_KEY",
+
+    "build-goerli": "graph build --network goerli",
+    "codegen-goerli": "graph codegen --network goerli",
+
+    "test": "graph test --network goerli",
+    "deploy-goerli": "yarn auth && graph deploy --product hosted-service zetadomains/zeta-subgraph-goerli --network goerli",
+
+
+    "create:local": "graph create zetadomains/zeta-subgraph-goerli --node http://graph.local.com --network goerli",
+    "deploy:local": "graph deploy zetadomains/zeta-subgraph-goerli --ipfs http://ipfs.local.com --node http://graph.local.com --network goerli",
+    "remove:local": "graph remove zetadomains/zeta-subgraph-goerli --node http://graph.local.com --network goerli",
+
+    "create:remote": "graph create zetadomains/zeta-subgraph --node https://graph.zeta.domains --network mainnet",
+    "deploy:remote": "graph deploy zetadomains/zeta-subgraph --ipfs https://ipfs.zeta.domains --node https://graph.zeta.domains --network mainnet",
+    "remove:remote": "graph remove zetadomains/zeta-subgraph --node https://graph.zeta.domains --network mainnet"
+     
+     
+  },
+  "dependencies": {
+    "@ensdomains/content-hash": "^2.5.3",
+    "@graphprotocol/graph-cli": "0.35.0",
+    "@graphprotocol/graph-ts": "^0.28.1",
+    "assemblyscript-regex": "^1.6.4"
+  },
+  "devDependencies": {
+    "matchstick-as": "^0.5.0"
+  }
+}

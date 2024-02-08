@@ -1,0 +1,15 @@
+type Domain @entity {
+  id: Bytes! 
+  name: String
+  labelName: String 
+  owner: Account
+  registrant: Account
+  expiryDate: BigInt
+  registeredAt: BigInt
+  createdAt: BigInt
+}
+
+type Account @entity {
+  id: Bytes!
+  domains: [Domain!]! @derivedFrom(field: "owner")
+}

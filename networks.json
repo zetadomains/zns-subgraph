@@ -1,0 +1,56 @@
+{
+  "goerli": {
+    "ZetaRegistrarController": {
+      "address": "0x7DD5267E087ff49faf9cdd6FB36489e8a8FAA52f",
+      "startBlock": 10500000
+    }, 
+    "BaseRegistrarImplementation": {
+      "address": "0x0705E714cd73aCA40d9A17E6c4dB566dbC83A6D0",
+      "startBlock": 10500000
+    },
+    "ENSRegistryWithFallback": {
+      "address": "0x01BeCD733ea490CCDa8B5Caa97381E67BFA5249D",
+      "startBlock": 10500000
+    },
+    "ENSRegistryWithFallbackOld": {
+      "address": "0x288C706bab41f9F45F0fe7154779596aD16F3bD6",
+      "startBlock": 10500000
+    },
+    "ReverseRegistrar": {
+      "address": "0x75aEB3F630700392A9a01E110DA7536573D58467",
+      "startBlock": 10500000
+    },
+    "PublicResolver": {
+      "address": "0x6b42219F6faCeEa1787Fdd5DBd63B9D10DcE2DEC",
+      "startBlock": 10500000
+    }
+  },
+  "mainnet": {
+    "ZetaRegistrarController": {
+      "address": "0x6b42219F6faCeEa1787Fdd5DBd63B9D10DcE2DEC",
+      "startBlock": 1600000
+    }, 
+    "BaseRegistrarImplementation": {
+      "address": "0xCEeCD6AF7c1504410c527EdEf163920e9F18BEbF",
+      "startBlock": 1600000
+    },
+    "ENSRegistryWithFallback": {
+      "address": "0x73C5857a7710A7EF3bc32EfA32C8a2ba2827A211",
+      "startBlock": 1600000
+    },
+    "ENSRegistryWithFallbackOld": {
+      "address": "0x01BeCD733ea490CCDa8B5Caa97381E67BFA5249D",
+      "startBlock": 1600000
+    },
+    "ReverseRegistrar": {
+      "address": "0xb77e71BcCAd878820Ed2B122e2fE807840b6e87E",
+      "startBlock": 1600000
+    },
+    "PublicResolver": {
+      "address": "0x25Ec50Ce68d711007C19814cDc6915b980165bfc",
+      "startBlock": 1600000
+    }
+  }
+}
+
+ 
